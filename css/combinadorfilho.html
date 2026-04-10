@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         /*
+            Combinadores: qual tipo de relação entre 2 seletores.
+            1. Combinador descendente (espaço)
+            2. Combinador filho (>)
+            3. ombinador irmão adjacente (+)
+            4. Combinador irmão geral (~)
+
+            [SELETOR][COMBINADOR][SELETOR]
+        */
+
+        div > p {
+            background: lightgreen;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>Parágrafo 1 dentro da div</p>
+        <p>Paragrafo 2 dentro da div</p>
+        <span>
+            <p>
+                Paragrafo 3 dentro da div, dentro do span
+            </p>
+        </span>
+    </div>
+
+    <p>Paragrafo 4, fora da div</p>
+    <p>
+        Paragrafo 5, fora da div
+    </p>
+</body>
+</html>
