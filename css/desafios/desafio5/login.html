@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+
+    <style>
+
+    @charset "UTF-8";
+
+    @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+
+        font-family: "Raleway", sans-serif;
+    }
+
+    body {
+        background-color: #020228;
+         
+        background-image: url('assets/imagens/fundosection1background-movies-series.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+
+    }
+
+    
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        justify-items: center;
+    }
+    nav img{
+        width: 150px;
+        padding: 10px;
+    }
+
+    nav div {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    #assine {
+        transition: 1s;
+        cursor: pointer;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: white;
+        font-size: bold;
+        transition: 1s;
+    }
+
+    #assine:hover {
+        background: white;
+        
+    }
+
+    #assine:hover a {
+        color: black;
+        
+    }
+
+    button {
+        background-color: #b535f6;
+        width: 110px;
+        padding: 10px 0;
+        margin: 0 5px;
+        border: 0px;
+        border-radius: 20px;
+        font-size: bold;
+    }
+
+    section {
+        
+        justify-items: center;
+        
+    }
+
+     main {
+        display: flex;
+        align-items: center;
+
+        justify-content: center;
+        margin: 200px;
+    }
+
+    #primer  {
+        color: white;
+
+        background: rgba(211, 211, 211, 0.06) ;
+
+        width: 80vw;
+        height: 40vh;
+        max-width: 800px;
+
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    
+        
+    }
+
+    #primer h2 {
+        margin: -20px 0 20px;
+        padding-top: -20px;
+    }
+
+    label {
+        align-self: flex-start;
+        margin: 0 30px;
+        padding: 10px;
+    }
+
+    input {
+        background: rgba(0, 0, 0, 0.2);
+        border: 1px solid white;
+        border-radius: 10px;
+
+        font-family: "Raleway", sans-serif;
+        color: white;
+        font-size: 1.1em;
+
+        margin: 10px 40px;
+        padding: 20px;
+
+    }
+
+    #primer div {
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        margin: 20px 40px;
+    }
+
+    #primer button {
+        margin: 0 10px 0 0;
+        
+        color: white;
+        background: linear-gradient(45deg, #9b34ef 0%, #490cb0 20%, transparent 50%);
+        background-size: 250%;
+        transition: 1s;
+    }
+
+    #primer button:hover {
+        background-color: transparent;
+        background-position: 100%;
+        outline: 2px solid;
+        transform: scale(1.05);
+    }
+
+    footer {
+    
+        text-align: center;
+        color: #9E86FF;
+    }
+
+    footer a {
+        color: #9E86FF;
+        text-decoration: none;
+        margin: 10px;
+        transition: 1s;
+    }
+
+    footer a:hover {
+        color: white;
+    }
+
+    footer p {
+        margin: 20px;
+        font-size: 0.7em;
+    }
+
+    footer img {
+        margin: 50px 10px 30px;
+    }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="../desafio5/index.html"><img src="assets/imagens/nav1hbo-logo.svg" alt="logo hbo max"></a>
+
+        <div>
+            <p id="entrar"><a href="login.html"><strong>ENTRAR</strong></a></p>
+            <button id="assine"><a href="../desafio5/index.html"><strong>ASSINE AGORA</strong></a></button>
+        </div>
+    </nav>
+
+    <main>
+        <section id="section1">
+            <form id="primer" method="post">
+                <h2>ENTRAR</h2>
+                <label for="">Você tem uma conta da HBO Max?</label>
+                <input type="email" name="email" id="email" placeholder="Endereço de e-mail" >
+                <input type="password" name="senha" id="senha" placeholder="Senha">
+                <div>
+                    <button>ENTRAR</button>
+                    <p>Esqueceu a senha?</p>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <a href=""><strong>AGORA NA HBO MAX</strong></a>
+            <a href=""><strong>EM BREVE</strong></a>
+            <a href=""><strong>FILME EM DESTAQUE</strong></a>
+            <a href=""><strong>SÉRIES</strong></a>
+            <a href=""><strong>AJUDA</strong></a>
+        </div>
+
+        <p>© 2022 WarnerMedia Direct Latin America, LLC. Todos os direitos reservados. HBO Max é usado sob licença.</p>
+
+        <div>
+            <a href=""><img src="assets/imagens/finalfb_0.png" alt=""></a>
+            <a href=""><img src="assets/imagens/finaltwitter_0.png" alt=""></a>
+            <a href=""><img src="assets/imagens/finalinstagram_0.png" alt=""></a>
+            <a href=""><img src="assets/imagens/finalyoutube_0.png" alt=""></a>
+        </div>
+    </footer>
+</body>
+</html>
